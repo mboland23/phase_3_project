@@ -84,7 +84,9 @@ Our model reveals a few things about pumps in need of repair in Tanzania:
 * 2. Altitude of the pump. The altitude of the pump also appeared to have high influence over the status of the pump in our final classification model. We found that pumps at higher altitude need to overcome lower pressure through different pump construction. When we looked at our data these pumps at higher altitudes were more likely to be functional. When repairing pipes, we recommend utilizing some of the techniques for higher altitude pumps. 
 ![altitude of pump](https://github.com/mboland23/phase_3_project/blob/main/images/GPS_v_Status_bar_Chart.png)
 * 3. Age of pumps. Finally, our age of pumps at inspection also was an important feature in determining pump status in our final model. We find that the  average age of pumps that need repair is 17 years compared to 12 years for pumps not needing repair. This leads us to believe that pumps typically start to need repairs between 12  and 17 years and recommend checking more frequently on pumps in this age. 
-![age of repair](https://github.com/mboland23/phase_3_project/blob/meg/images/status_mean_age.png)
+
+![Mean_inspection_age_v_Status_bar_Chart](https://user-images.githubusercontent.com/49175475/179315002-bc8da4a9-9d14-483c-9537-7e6df686e3cd.png)
+
 
 On the data side we also recommend a few things based on our model: 
 * 1. Standardization of data collection techniques. To improve our prediction tool we recommend that inspectors (whether local management or larger organizations) standardize data collection process and record keeping through a wide scale education program put on by the Tanzania Ministry of Water. As mentioned, the data suffered from missing, redundant, mispelled or nonsensical values (populations of 0). Improvement of data collection will allow more usable data — particularly in terms of pump age — and decrease the amount of imputation our model needs to undertake. 
