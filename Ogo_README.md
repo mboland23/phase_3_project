@@ -20,6 +20,8 @@ Our model looked at 59,400 observations and 39 characteristics (columns) on wate
 
 Our target variable, status_group, represents the status of the water pump categorized as either ‘functional’, ‘functional needs repair’, and ‘non functional’ — 54% of observations were functional pumps, 38% non functional, and 7% of pumps were deemed functional, needs repair. 
 
+![status_group](./images/Well_Status_bar_Chart.png)
+
 We dropped columns that offered information about data collection, included repetitive information from other columns, had too many unique responses that would be computationally expenive to encode, or were found to be of low feature importance in our modeling. We also used the data to create three new indicators: unknown_construction_yr, water_per_person, age_at_inspection. 
 
 Our final model included information from 23 columns 59,399 observations. 
@@ -77,7 +79,10 @@ Finally, we acknowledged that our data was very imbalanced in our class of inter
 ## Findings & Recommendations
 Our model reveals a few things about pumps in need of repair in Tanzania:
 * 1. Internal Water Basin. Whether or not a pump resides in the Internal Water Basin appeared to be a big indicator of its status in our final classification model. After looking further at the Internal Water Basin we find that it is the third largest basin in the country (out of 9). However, 80% of the population that resides in the area suffer from water scarcity. We recommend that if a nonprofit were looking to repair water pumps, that it start with pumps in this region. 
+![water_basin](https://github.com/mboland23/phase_3_project/blob/main/images/Internal_Basin_1.png)
+
 * 2. Altitude of the pump. The altitude of the pump also appeared to have high influence over the status of the pump in our final classification model. We found that pumps at higher altitude need to overcome lower pressure through different pump construction. When we looked at our data these pumps at higher altitudes were more likely to be functional. When repairing pipes, we recommend utilizing some of the techniques for higher altitude pumps. 
+![altitude of pump](https://github.com/mboland23/phase_3_project/blob/main/images/GPS_v_Status_bar_Chart.png)
 * 3. Age of pumps. Finally, our age of pumps at inspection also was an important feature in determining pump status in our final model. We find that the  average age of pumps that need repair is 17 years compared to 12 years for pumps not needing repair. This leads us to believe that pumps typically start to need repairs between 12  and 17 years and recommend checking more frequently on pumps in this age. 
 
 On the data side we also recommend a few things based on our model: 
