@@ -20,6 +20,8 @@ Our data looked at 59,400 observations and 39 characteristics (columns)  on wate
 
 Our target variable, status_group, represents the status of the water pump categorized as either ‘functional’, ‘functional needs repair’, and ‘non functional’ — 54% of observations were functional pumps, 38% non functional, and 7% of pumps were deemed functional, needs repair. 
 
+![status_group](
+
 We dropped columns that offered information about data collection, included repetitive information from other columns, or were found to be of low feature importance in our modeling. We also used the data to create three new indicators: construction_yr_missing, water_per_population, age_at_inspection. 
 
 Our final model included information from 23 columns 59,399 observations. 
