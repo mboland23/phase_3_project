@@ -28,14 +28,16 @@ Our final model included information from 23 columns 59,399 observations.
 In order to construct the best predictive model of water pumps that are in need of repair, we implemented an iterative modeling on training data where we started with a baseline model where the model would always predict the majority class (functional),  and moved to more complex models through implementing decision trees, K-nearest neighbors, and random forests. To determine the best hyperparameters within each model, we also conducted GridSearchCV. In order to determine the best predictive model, we compared precision rates across models. We determined that this was the best metric to set as our determinant because when looking at water pumps we felt it is most important that we have a model that gives us the highest confidence that when we predict a pump that needs repair, the pump actually needs repair. This is due to the time and financial constraints it would cause a nonprofit like Water.Org to visit each pump. 
 
 In general we followed the following process after creating our training data set:
- 
-* Transformed our categorical, numerical, and ordinal columns through ColumnTransformer and instantiated the model using Pipeline. 
-* Fit our model on the training set. 
-* Cross validated on the training set. 
+
+* Transformed our categorical, numerical, and ordinal columns through ColumnTransformer and instantiated the model using a Pipeline.
+* Fit our model on the training set.
+* Cross validated on the training set.
 * Predicted y values from the testing data based on the model
 * Examined the classification report
 
-In the case of K-nearest neighbors and random forest classifiers  we also ran feature importance to see if there were features we could drop in our next iteration to strengthen our model. 
+In the case of our K-nearest neighbors, Decision Tree, and Random Forest classification models we also ran Grid searches to optimize the hyperparameters of our next iterations to strengthen our models.
+
+We also tried smoting our data several different ways - (1) oversampling the minority class and undersampling the majority class, (2) oversampling the minority class, and (3) doubling the minority class.
 
 ## Modeling 
 ### Dummy Model — Always Predict Majority Class
